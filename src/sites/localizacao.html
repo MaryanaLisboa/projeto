@@ -1,17 +1,115 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ENDEREÇO</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WICKED RESTAURANT</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    /* Deixa os cards um do lado do outro e centralizados */
+    .cards-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px; /* espaço entre os cards */
+      margin: 40px 0;
+    }
+
+    /* Alternância de cores */
+    .cards-container .card:nth-child(odd) {
+      background-color: #28a745; /* verde */
+      color: white;
+    }
+    .cards-container .card:nth-child(even) {
+      background-color: #e83e8c; /* rosa */
+      color: white;
+    }
+
+    /* Mantém o texto legível */
+    .card .btn {
+      background-color: black;
+      border: none;
+    }
+    .card .btn:hover {
+      background-color: white;
+      color: black;
+    }
+  </style>
 </head>
-<body>
-    <section id="localizacao">
-        <h2>Nosso Endereço</h2>
-        <iframe>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116998.43119465852!2d-46.69535445460002!3d-23.597124200523627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c88849fd6d%3A0x6c2a8652e6e5b36a!2sShopping%20Cidade%20S%C3%A3o%20Paulo!5e0!3m2!1spt-BR!2sbr!4v1756218036369!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </iframe>" 
-      </section>
-      
+<body style="background-color: rgb(49, 49, 49);">
+
+  <header>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> 
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">WICKED RESTAURANT</a>
+      </div>
+    </nav>
+
+    <!-- CARROSSEL -->
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="../img/Cópia de explosivo.png" class="d-block w-100" alt="Imagem 1">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="cards-container">
+        <!-- CARD 1 -->
+        <div class="card" style="width: 18rem;">
+          <img src="../img/restaurant 1.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">São Paulo - SP</h5>
+            <p class="card-text">Av. das Nações Unidas, 22540 - Jurubatuba, São Paulo - SP</p>
+            <a href="https://maps.app.goo.gl/hgVGeB5GVSvWF2VCA" target="_blank" class="btn btn-primary">MAPA</a>
+          </div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="card" style="width: 18rem;">
+          <img src="../img/wicked restaurant 2.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Campinas - SP</h5>
+            <p class="card-text">R. Jacy Teixeira de Camargo, 940 - Jardim do Lago, Campinas - SP</p>
+            <a href="https://maps.app.goo.gl/rAYdY98cDfYmd7CGA" target="_blank" class="btn btn-primary">MAPA</a>
+          </div>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="card" style="width: 18rem;">
+          <img src="../img/wicked capa 4.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Rio Claro - SP</h5>
+            <p class="card-text">Av. Conde Francisco Matarazzo Júnior, 205 - Rio Claro - SP</p>
+            <a href="https://maps.app.goo.gl/9ffxjV3EX8gbK5Ha9" target="_blank" class="btn btn-primary">MAPA</a>
+          </div>
+        </div>
+
+        <!-- CARD 4 -->
+        <div class="card" style="width: 18rem;">
+          <img src="../img/wicked capa 3.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Piracicaba - SP</h5>
+            <p class="card-text">Av. Limeira, 722 - Areião, Piracicaba - SP</p>
+            <a href="https://maps.app.goo.gl/cPDqq6aEG5MkCFL17" target="_blank" class="btn btn-primary">MAPA</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- JS Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
