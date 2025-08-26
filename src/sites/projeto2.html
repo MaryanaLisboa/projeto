@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Borcelle Restaurant</title>
+  <title>WICKED BURGUER SP</title>
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -26,7 +26,6 @@
 <body class="d-flex flex-column min-vh-100">
 
   <header>
-
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> 
       <div class="container-fluid">
@@ -39,7 +38,7 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
             <a class="nav-link active" aria-current="page" href="#historia">História</a>
-            <a class="nav-link" href="#cardapio">Cardápio</a>
+            <a class="nav-link" href="file:///D:/projetinho/src/sites/cardapio.html" target="_blank">Cardápio</a>
             <a class="nav-link" href="#local">Endereço</a>
           </div>
         </div>
@@ -68,107 +67,58 @@
         <span class="visually-hidden">Próximo</span>
       </button>
     </div>
-
   </header>
 
-  <main class=flex-fill>
-
+  <main class="flex-fill">
     <section> 
-        <div style="height: 90vh; background-color: rgb(233, 54, 54);" id="historia">
-          <div class="row" style="height: 90vh;">
-          
-            <!-- Coluna da História -->
-            <div class="col-12 col-md-6" 
-              style="background-color: rgb(245, 182, 182); display: flex; justify-content: center; align-items: center; flex-direction: column; padding: 20px;">
-              <p style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: larger;"> O Borcelle Restaurant nasceu do sonho de dois irmãos apaixonados por gastronomia e cultura urbana. Localizado no coração da cidade, o restaurante começou como uma pequena hamburgueria de bairro, com um cardápio enxuto, mas repleto de personalidade. Inspirados por viagens e sabores do mundo, eles criaram receitas autorais que combinavam ingredientes artesanais com toques inovadores, transformando o simples hambúrguer em uma verdadeira experiência gastronômica. Com uma decoração moderna e aconchegante, o Borcelle logo se tornou um ponto de encontro para jovens, famílias e amantes de hambúrgueres gourmet.</p>
-              <!-- <img src="../img/Sobre nós... (1).png" alt="local" style="height: 30vh;"> -->
-            </div>
-      
-            <!-- Coluna do Local -->
-            <div class="col-12 col-md-6" 
-              style="background-color: rgb(247, 231, 213); display: flex; justify-content: center; align-items: center; flex-direction: column; padding: 20px;" id="local">
-            <img src="../img/Borcelle Restaurant.png" alt="endereço" style="height: 60vh;">
-              </p>
-            </div>
-      
+      <div style="height: 90vh; background-color: rgb(233, 54, 54);" id="historia">
+        <div class="row" style="height: 90vh;">
+        
+          <!-- Coluna da História -->
+          <div class="col-12 col-md-6" 
+            style="background-color: rgb(255, 227, 227); display: flex; justify-content: center; align-items: center; flex-direction: column; padding: 20px; text-align: center;">
+            
+            <!-- Título -->
+            <h2 style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; color: #9b26af; margin-bottom: 20px;">NOSSA HISTÓRIA</h2>
+            
+            <!-- Texto -->
+            <p style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: larger; line-height: 1.6;"> 
+              Em uma cidade comum, surgiu o <span style="color: #9b26af; font-weight: bold;">Wicked</span>,  
+              onde o ordinário se transforma em <span style="color: #ff4081; font-weight: bold;">espetáculo</span>.
+              
+              Cada hambúrguer rosa é uma poção de sabor, ousadia e encanto, pronta para encantar quem ousa provar.
+              
+              Entre luzes roxas, sussurros de magia e cantinhos secretos,  
+              cada mordida é um <span style="color: #ff4081; font-weight: bold;">ato de magia</span>, cada visita, um musical.
+              
+              Aqui, você não apenas come… <span style="color: #9b26af; font-weight: bold;">você entra no palco, sente a magia e descobre que até o comum pode ser extraordinário</span>.
+            </p>
           </div>
-        </div>
-      </section>
-
-      <section class="container my-5" id="cardapio">
-        <h2 class="text-center text-white mb-4"></h2>
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
-      
-          <!-- Card 1 -->
-          <div class="col">
-            <div class="card h-100">
-              <img src="../img/cardapio2.jpg" class="card-img-top" alt="Hambúrguer Clássico">
-              <div class="card-body">
-                <h5 class="card-title">Clássico Borcelle</h5>
-                <p class="card-text">Pão artesanal, hambúrguer 150g, queijo prato, alface, tomate e molho especial.</p>
-                <p class="fw-bold">R$ 29.90</p>
-              </div>
-            </div>
-          </div>
-      
-          <!-- Card 2 -->
-          <div class="col">
-            <div class="card h-100">
-              <img src="../img/cardapio1.jpg" class="card-img-top" alt="Cheddar Bacon">
-              <div class="card-body">
-                <h5 class="card-title">Cheddar & Bacon</h5>
-                <p class="card-text">Hambúrguer suculento, cheddar cremoso, bacon crocante e pão australiano.</p>
-                <p class="fw-bold">R$ 34.90</p>
-              </div>
-            </div>
-          </div>
-<!--       
-          Card 3 -->
-          <div class="col">
-            <div class="card h-100">
-              <img src="../img/batata.jpg" class="card-img-top" alt="Batata">
-              <div class="card-body">
-                <h5 class="card-title">Batata Frita</h5>
-                <p class="card-text">Porção de fritas crocantes.</p>
-                <p class="fw-bold">R$ 19.90</p>
-              </div>
-            </div>
-          </div>
-      
-          <!-- Card 4 -->
-          <div class="col" id="cardapio">
-            <div class="card h-100">
-              <img src="../img/cardapio3.jpg" class="card-img-top" alt="Duplo Smash">
-              <div class="card-body">
-                <h5 class="card-title">Duplo Salada</h5>
-                <p class="card-text">Adicional de salada, hamburguer bovino, queijo prato duplo, maionese da casa e pão brioche.</p>
-                <p class="fw-bold">R$ 27.80</p>
-              </div>
-            </div>
-          </div>
-      
-        </div>
-      </section>
-      </main>
-      
-
-
-
-
-      <footer class="footer mt-auto">
-        <!-- RODAPE -->
-        <div style=" width: 100vw; height: 20vh; margin-top: 10vh;" class="corPreto">
-          <ul class="nav justify-content-center">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">TODOS OS DIREITOS RESERVADOS</a>
-            </li>
-      
-            </li>
-          </ul>
-        </div>
     
-       </footer>
+          <!-- Coluna do Local -->
+          <div class="col-12 col-md-6" 
+            style="background-color: rgb(255, 227, 227); display: flex; justify-content: center; align-items: center; flex-direction: column; padding: 20px;" id="local">
+            <img src="../img/wicked capa.jpg" alt="endereço" style="height: 60vh;">
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+
+
+  <footer class="footer mt-auto">
+    <!-- RODAPE -->
+    <div style=" width: 100vw; height: 20vh; margin-top: 10vh;" class="corPreto">
+      <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#"> WICKED BURGUER SP</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
+
